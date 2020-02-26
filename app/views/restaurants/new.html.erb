@@ -1,0 +1,12 @@
+<h1>New Restaurant</h1>
+
+<%= @restaurants %>
+<!-- show all the restaurants
+ -->
+<%=render 'form', restaurant: @restaurant %>
+<!-- render a form for the user to fill out if they want to add a new restaurant
+ -->
+<%= link_to 'Back to restaurants', restaurants_path %>
+
+<!-- take user back to the homepage
+ -->
