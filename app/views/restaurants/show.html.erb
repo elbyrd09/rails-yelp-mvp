@@ -19,8 +19,9 @@
     <%= @restaurant.category %>
   </p>
 
+  <h2>Reviews for <%= @restaurant.name %></h2>
   <p>
-    <% @reviews.each do |review| %>
+    <% @restaurant.reviews.each do |review| %>
       <%= review.content %>
     <% end %>
   </p>
